@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">BGMUN Sastisfaction Survey (EN)</h1>
+    <p id="description">Thank you for taking your time to do this survey, your answers will greatly help us improve BGMUN</p>
+    <form method="post" id="survey_form">
+        <fieldset>
+            <h2>Personal Information</h2>
+                <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your first name"></label>
+                <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="Enter your email"></label>
+                <label for="age" id="number-label">Age (optional): <input type="number" name="age" id="number" placeholder="Enter your age" min="11" max="120"></label>
+        </fieldset>
+        <fieldset>
+            <h2>Your background</h2>
+                <label for="job" id="job-label">Role: 
+                    <select name="select" id="dropdown">
+                        <option value="">Select one</option>
+                        <option value="1">Delegate</option>
+                        <option value="2">Staff</option>
+                        <option value="3">Chair</option>
+                        <option value="4">Journalist</option>
+                        <option value="5">Social Media Manager</option>
+                        <option value="6">Administration</option>
+                        <option value="7">Other</option>
+                    </select>
+                </label>
+                <p>Years of experience:</p>
+                <label for="experience"></label>
+        </fieldset>
+    </form>
+</body>
+</html>
