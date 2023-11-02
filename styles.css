@@ -1,3 +1,13 @@
 label {
     display: block;
 }
+
+.nomargin {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+.inline {
+    display: inline;
+}

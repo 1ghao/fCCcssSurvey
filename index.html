@@ -9,11 +9,11 @@
 <body>
     <h1 id="title">BGMUN Sastisfaction Survey (EN)</h1>
     <p id="description">Thank you for taking your time to do this survey, your answers will greatly help us improve BGMUN</p>
-    <form method="post" id="survey_form">
+    <form method="post" id="survey-form">
         <fieldset>
             <h2>Personal Information</h2>
-                <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your first name"></label>
-                <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="Enter your email"></label>
+                <label for="name" id="name-label">Name: <input type="text" id="name" placeholder="Enter your first name" required></label>
+                <label for="email" id="email-label">Email: <input type="email" name="email" id="email" placeholder="Enter your email" required></label>
                 <label for="age" id="number-label">Age (optional): <input type="number" name="age" id="number" placeholder="Enter your age" min="11" max="120"></label>
         </fieldset>
         <fieldset>
@@ -30,8 +30,27 @@
                         <option value="7">Other</option>
                     </select>
                 </label>
-                <p>Years of experience:</p>
-                <label for="experience"></label>
+                <fieldset class="nomargin">
+                    <p>Years of experience:</p>
+                    <label for="1_2yr" class="inline"><input type="radio" name="experience" id="1_2yr" checked>1-2 years</label>
+                    <label for="3-4yr" class="inline"><input type="radio" name="experience" id="3-4yr">3-4 years</label>
+                    <label for="5+yr" class="inline"><input type="radio" name="experience" id="5+yr">5 + years</label>
+                </fieldset>
+        </fieldset>
+        <fieldset>
+            <h2>Your Opinion</h2>
+            <p>Select the checkboxes you agree with</p>
+                <fieldset class="nomargin">
+                    <label for="happiness" class="inline"><input type="checkbox" name="happiness" id="">I had a lot of fun</label>
+                    <label for="happiness" class="inline"><input type="checkbox" name="happiness" id="">I had fun</label>
+                    <label for="happiness" class="inline"><input type="checkbox" name="happiness" id="" checked>It was ok</label>
+                    <label for="happiness" class="inline"><input type="checkbox" name="happiness" id="">It wasn't interesting</label>
+                    <label for="happiness" class="inline"><input type="checkbox" name="happiness" id="">I fell asleep</label>
+                </fieldset>
+                <fieldset class="nomargin">
+                    <label for="topics" class="inline"><input type="checkbox" name="topics" id="">I think the topics were very well selected</label>
+                    <label for="topics" class=""></label>
+                </fieldset>
         </fieldset>
     </form>
 </body>
