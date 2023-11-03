@@ -1,3 +1,35 @@
+body {
+    width: 100%;
+    height: auto;
+    background-color: aliceblue;
+    font-size: 24px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1, p, h2 {
+    margin: 1em;
+    text-align: center;
+}
+
+h2 {
+    margin: 1em 0 0.2em 0;
+}
+
+fieldset {
+    text-align: center;
+    padding: 0;
+    border: 0;
+    border-bottom: 3px solid rgba(125, 197, 230, 0.695);
+    margin: 2rem 0;
+}
+
+fieldset:last-of-type {
+    border-bottom: none;
+    margin: 0.5rem 0 0.5rem 0;
+}
+
+
+
 label {
     display: block;
 }
@@ -10,4 +42,9 @@ label {
 
 .inline {
     display: inline;
+}
+
+
+#submit {
+    margin: auto;
 }
